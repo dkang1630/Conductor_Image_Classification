@@ -38,8 +38,8 @@ def gvn_processing(gray_image):
 
 
 #folder path
-image_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\Image\Original Image\Def_Cor'
-GVN_image_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\Image\GVN\GVN_Img\def_cor'
+image_folder_path = r"C:\Users\dkang\OneDrive\Documents\Conductor_research\Image\test"
+GVN_image_folder_path = r'C:\Users\dkang\OneDrive\Documents\Conductor_research\Image'
 
 
 for filename in os.listdir(image_folder_path):

@@ -82,7 +82,7 @@ def otsu_canny(image, lowrate=0.1):
     # return the edged image
     return edged
 #folder path
-image_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\Image\Original Image\Defect_test'
+image_folder_path = r'"C:\Users\dkang\OneDrive\Documents\Conductor_research\Image\test_image.jpg"'
 # GVN_image_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\Image\GVN\GVN_Img\Corrosion'
 # GVN_Hist_Img_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\Image\GVN\GVN_Hist_Img\Corrosion'
 # GVN_Hist_data__row_folder_path = r'C:\Users\dkang\OneDrive\Documents\Gray Scale Image Code\Conductor_research\data\GVN\Corrosion\row'
@@ -186,37 +186,6 @@ for filename in os.listdir(image_folder_path):
         plt.show()
 
 
-        """ cv2.imshow('Grayscale Image', gray_image)
-        cv2.imshow('Normalized Gray Scale Variance Map', normalized_map) """
-        """ bin_gauss1 = pcv.threshold.gaussian(gray_img=normalized_map_uint8, ksize=25, offset=9,
-                                        object_type='dark')
-        
-        #ret, thresh1 = cv2.threshold(normalized_map_uint8, 5, 255, 
-        #                                        cv2.THRESH_OTSU) 
-        # Find contours
-        contours, hierarchy = cv2.findContours(bin_gauss1, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        
-        # Create a mask to fill the interior
-        mask = np.zeros_like(bin_gauss1)
-        
-        # Fill contours in the mask
-        cv2.drawContours(mask, contours, -1, 255, -1)
-
-        # Create a black canvas
-        filled_image = np.zeros_like(gray_image)
-        
-        # Copy original grayscale image inside the mask area
-        filled_image[mask == 255] = gray_image[mask == 255]
-        
-        final_normalized_map = gvn_processing(filled_image) """
-
-        """ cv2.imshow('Original Image', image) """
-        """ cv2.imshow('Grayscale Image', gray_image)
-        cv2.imshow('Equalized Grayscale Image', equalized_image) """
-
-        """ cv2.imshow('thresh1', bin_gauss1) """
-        """ cv2.waitKey(0)
-        cv2.destroyAllWindows()
-        plt.close('all') """
+     
 
 
